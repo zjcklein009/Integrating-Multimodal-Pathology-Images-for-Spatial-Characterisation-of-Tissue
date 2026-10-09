@@ -48,13 +48,3 @@ Start Jupyter inside the repository and run notebooks in their numbered order. U
 - pCR tests use cases as independent observations. Raw and Benjamini–Hochberg-adjusted p-values remain available; displaying raw p-values does not replace multiple-testing correction.
 
 Automatic registration QC is not an independent accuracy measurement. Tissue masks and patch motifs are not validated cell phenotypes. Coarse and patient partitions that fail size criteria remain explicitly flagged. Local continuity is descriptive, and the report does not establish a validated pCR predictor.
-
-## Verification and publication
-
-```sh
-python tools/check_package.py
-```
-
-This performs syntax, notebook, configuration and packaging checks without executing notebook cells or loading models. See `docs/static_check.json` for the packaging-time audit. Scientific execution has deliberately not been rerun.
-
-Before pushing to GitHub, keep all ignored data/model/output directories excluded and clear notebook outputs after any local run. Do not publish gated weights, access tokens, patient identifiers or private clinical tables. See `THIRD_PARTY_NOTICES.md`; no blanket licence is applied to third-party or supervisor-supplied material.
