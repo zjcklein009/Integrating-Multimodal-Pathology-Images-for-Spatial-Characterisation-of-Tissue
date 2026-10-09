@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "scope": "AST/source and schema comparison only; no scientific code execution",
+  "function_comparisons": [
+    {
+      "notebook": "notebooks/01_registration/01_Global_Registration.ipynb",
+      "retained_functions_compared": 40,
+      "changed_functions": []
+    },
+    {
+      "notebook": "notebooks/01_registration/02_Local_Refinement.ipynb",
+      "retained_functions_compared": 67,
+      "changed_functions": []
+    },
+    {
+      "notebook": "notebooks/02_segmentation/03_Tissue_Segmentation.ipynb",
+      "retained_functions_compared": 36,
+      "changed_functions": []
+    },
+    {
+      "notebook": "notebooks/03_features/06_Virchow2_Extraction.ipynb",
+      "retained_functions_compared": 4,
+      "changed_functions": []
+    },
+    {
+      "notebook": "notebooks/04_statistics/07_Spatial_Analysis.ipynb",
+      "retained_functions_compared": 11,
+      "changed_functions": []
+    },
+    {
+      "notebook": "notebooks/04_statistics/08_Modality_Comparison.ipynb",
+      "retained_functions_compared": 5,
+      "changed_functions": []
+    },
+    {
+      "notebook": "src/pathology/kronos_pipeline.py",
+      "retained_functions_compared": 35,
+      "changed_functions": []
+    },
+    {
+      "notebook": "src/pathology/profiles.py",
+      "retained_functions_compared": 2,
+      "changed_functions": []
+    }
+  ],
+  "sampling_qc_and_model_settings_match": true,
+  "spatial_computation_cells_match": true,
+  "notebook_schemas_valid": true,
+  "errors": []
+}

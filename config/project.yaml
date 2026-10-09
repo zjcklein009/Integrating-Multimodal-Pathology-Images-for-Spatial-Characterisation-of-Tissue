@@ -1,0 +1,8 @@
+he_dir: data/he
+mif_dir: data/mif
+clinical_labels: data/clinical_labels.csv
+segmentation_checkpoint: models/tissue_segmentation.pth
+kronos2_model: models/kronos2
+virchow2_model: models/virchow2
+output_root: outputs
+run_name: full_kronos2_verified_panel_v1

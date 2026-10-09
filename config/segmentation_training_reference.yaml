@@ -1,0 +1,111 @@
+source:
+  image_root: "/YOUR_PATH/wsirois/roi-level-annotations/tissue-bcss/images"
+  label_root: "/YOUR_PATH/wsirois/roi-level-annotations/tissue-bcss/masks"
+  lib: "./cache/source.lib"
+
+cropper:
+  type: 'active'
+  groups_lib: "./cache/groups.yaml"
+  cropper_lib: "./cache/cropper.yaml"
+  cropper_root: "./cache/"
+  predict_lib: "./cache/predict.yaml"
+  target_mpp: 0.5
+  patch_size: 512
+  step: 256
+
+dataset:
+  length: 36000
+  class_num: 4
+  label_map: [255, 0, 1, 0, 3, 3, 2, 3]
+  loss_ignore_class:
+  use_migrate: False
+  use_confidence: False
+  in_memory: True
+  active_weight: [3, 3, 6, 12]
+  train:
+    use_active: True
+    use_box: True
+    rotate: 'random[-45, 45]'
+    scaling: 'random[1, 1.5]'
+  valid:
+    use_box: True
+    use_scale: True
+    rotate: 'list[0]'
+    scaling: 'list[1]'
+  test:
+    use_box: False
+    use_scale: True
+    rotate: 'list[0]'
+    scaling: 'list[1]'
+  predict:
+    use_scale: True
+    scaling: 'random[0.8, 1.2]'
+  formatter:
+    type: 'norm'
+    name: '--'
+    weights: '--'
+  transfer:
+    gamma: [ 95, 105 ]
+    hsv:
+      h: 40
+      s: 10
+      v: 10
+    bc:
+      b: 0.5
+      c: 0.5
+    level: 'strong'
+    elastic: 'off'
+    cut: 'off'
+model:
+  name: 'van'
+  auxiliary: True
+  weights: "imagenet"
+  active: "softmax2d"
+  optimizer: 'adam'
+  loss: 'lce_dice:1'
+  ce_limit: 15
+  label_smooth: 0.08
+  label_weights: []
+  scheduler: 'coswarm'
+  warmup:
+  lr:
+    encoder: 1e-5
+    decoder: 1e-4
+    head: 1e-3
+    wt_net: 1e-4
+    van: 1e-4
+
+build:
+  visual_root: "./cache/visual"
+train:
+  device: 'cuda:0'
+  batch_size: 14
+  epoch: 20
+  save_epoch: 1
+  num_workers: 0
+  tqdm_verbose: True
+visual:
+  dataset_root: "./datasource/visual"
+  predict_root: "./datasource/visual"
+  color:
+    box: [0, 255, 255]
+    fill: [
+      [ 255, 0, 0 ],
+      [ 180, 120, 0 ],
+      [ 255, 255, 0 ],
+      [ 160, 160, 160 ],
+    ]
+    outline: [
+      [ 255, 0, 0 ],
+      [ 180, 120, 0 ],
+      [ 255, 255, 0 ],
+      [ 160, 160, 160 ],
+    ]
+  bord_width: 7
+output:
+  root: "./output/"
+  target: "four-class-1plus3"
+  full: "full"
+  model: "model.pth"
+  log: "log.csv"
+  visual: True

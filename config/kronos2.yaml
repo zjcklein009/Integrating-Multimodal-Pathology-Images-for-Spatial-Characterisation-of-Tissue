@@ -1,0 +1,45 @@
+project:
+  name: matched_pathology_features
+  random_seed: 20260828
+inputs: {}
+outputs:
+  write_csv_metadata: true
+  write_wide_parquet: true
+  save_preview_patch_npz: true
+roi:
+  size_px: 4096
+  count_per_wsi: 3
+  candidate_trials: 400
+  sampling_stride_px: 32
+  min_tissue_fraction: 0.65
+  min_tumour_fraction: 0.08
+  min_non_tumour_fraction: 0.08
+  min_class_count: 2
+  max_pairwise_iou: 0.10
+  allow_relaxed_fallback: true
+patch:
+  size_px: 256
+  stride_px: 256
+  min_tissue_fraction: 0.50
+  preview_patches_per_case: 4
+segmentation:
+  ignore_label: 255
+  class_names:
+    0: tumour
+    1: tumour_associated_stroma
+    2: inflamed_stroma
+    3: other
+registration_qc:
+  allowed_statuses: [ok, warning]
+mif:
+  series_index: 0
+  preferred_level: 1
+  intensity_max: 255.0
+  inverse_tps_iterations: 3
+  min_signal_fraction: 0.10
+kronos2:
+  batch_size: 12
+  device: auto
+  preferred_dapi: DAPI
+  expected_feature_dim: 768
+  minimum_enabled_markers: 2

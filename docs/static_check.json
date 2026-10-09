@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "scope": "static only; no notebook execution or model loading",
+  "notebooks": 9,
+  "code_cells": 66,
+  "python_files": 12,
+  "unchanged_vendor_files": 6,
+  "files": 42,
+  "errors": []
+}

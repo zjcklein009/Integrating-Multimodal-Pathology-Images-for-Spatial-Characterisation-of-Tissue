@@ -1,0 +1,9 @@
+source_channel_index,source_channel_name,protein_marker_name,enabled,status,note
+0,DAPI,DAPI,true,verified_panel,Verified nuclear stain in QPTIFF metadata
+1,Opal 570,PD1,true,verified_panel,Presentation slide 7 Akoya PhenoCode panel table: PD-1 paired with Opal 570
+2,Opal 690,FOXP3,true,verified_panel,Presentation slide 7 Akoya PhenoCode panel table: FoxP3 paired with Opal 690
+3,Opal 480,CD8,true,verified_panel,Presentation slide 7 Akoya PhenoCode panel table: CD8 paired with Opal 480
+4,Opal 620,CD20,true,verified_panel,Presentation slide 7 Akoya PhenoCode panel table: CD20 paired with Opal 620
+5,Opal 780,CD4,true,verified_panel,Presentation slide 7 Akoya PhenoCode panel table: CD4 paired with Opal 780
+6,Opal 520,PDL1,true,verified_panel,Presentation slides 22 and 32 identify the variable Opal 520 marker as PDL1
+7,Sample AF,,false,excluded_autofluorescence,Autofluorescence component; not a biological protein marker

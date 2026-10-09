@@ -1,0 +1,6 @@
+he_dir: ../BS6211/TTSH/TTSH_HandE
+mif_dir: ../BS6211/TTSH/TTSH_mIF
+clinical_labels: ../BS6211/KRONOS_feature_extraction/clinical_labels.csv
+segmentation_checkpoint: ../BS6211/TIGER_challenge_2022/TIGER_challenge_2022/train_script/Segmentation/output/four-class-1plus3/auto-save-epoch-20.pth
+kronos2_model: ../BS6211/KRONOS2
+virchow2_model: ../BS6211/Virchow2

@@ -1,0 +1,4 @@
+-r segmentation.txt
+pyarrow>=14,<22
+omegaconf>=2.3,<3
+safetensors>=0.4,<1

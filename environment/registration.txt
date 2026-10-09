@@ -1,0 +1,16 @@
+numpy>=1.26,<3
+pandas>=2.0,<3
+scipy>=1.11,<2
+opencv-python-headless>=4.8,<5
+Pillow>=10,<12
+tifffile>=2024.1,<2025.5
+imagecodecs>=2024.1,<2025.5
+matplotlib>=3.7,<4
+tqdm>=4.66,<5
+PyYAML>=6,<7
+transformers==4.56.0
+huggingface-hub>=0.28,<1
+torch==2.6.0
+torchvision==0.21.0
+ipykernel>=6,<7
+jupyterlab>=4,<5

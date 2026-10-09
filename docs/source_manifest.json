@@ -1,0 +1,70 @@
+{
+  "report_sha256": "f50da937f5239fe8761a1adfcb51988df1b1471d2b05e89f58ef9988b644cb00",
+  "files": [
+    {
+      "packaged_file": "notebooks/01_registration/01_Global_Registration.ipynb",
+      "source_file": "v3.ipynb",
+      "source_sha256": "fd0de636c4676ef507314551479ca68badd1c428707e025d84ddb4bbdf69af5e"
+    },
+    {
+      "packaged_file": "notebooks/01_registration/02_Local_Refinement.ipynb",
+      "source_file": "Registration.ipynb",
+      "source_sha256": "c23eefed79132afd17809b9a1f0f67ebc25168d6178625827b051c7cc65a68af"
+    },
+    {
+      "packaged_file": "notebooks/02_segmentation/03_Tissue_Segmentation.ipynb",
+      "source_file": "Segmentation_v2_GPU_all_cases.ipynb",
+      "source_sha256": "0f8b67b7a938e85f8aa6b971fa54907e07203bc63a0e830955dcfb700bf17e0e"
+    },
+    {
+      "packaged_file": "src/pathology/kronos_pipeline.py",
+      "source_file": "features/run_kronos_pipeline.py",
+      "source_sha256": "709226cbdaba9ae5839ecd390317b3efe297f040efcc3180af6f0428199e7ae1"
+    },
+    {
+      "packaged_file": "notebooks/03_features/06_Virchow2_Extraction.ipynb",
+      "source_file": "features/notebooks/09_Virchow2_HE_Feature_Extraction.ipynb",
+      "source_sha256": "bd83efd89c478bb0c8e2960b0c3ff19b4e5244c83c4a7535f2e15bed8e952e6a"
+    },
+    {
+      "packaged_file": "notebooks/04_statistics/07_Spatial_Analysis.ipynb",
+      "source_file": "features/notebooks/08_KRONOS2_Patch_Community_Graph_Analysis.ipynb",
+      "source_sha256": "db0ee5db14155fa8885c5968cfc5622b7e063475a3e518578e6a2358e73cb326"
+    },
+    {
+      "packaged_file": "notebooks/04_statistics/08_Modality_Comparison.ipynb",
+      "source_file": "features/notebooks/10_HE_mIF_Community_Comparison.ipynb",
+      "source_sha256": "24f1da2a03213f709d7a6365bb8f5c2a33c3e8d69cc367b8a5a00307cd5f286c"
+    },
+    {
+      "packaged_file": "vendor/tiger/model/net/van/impl_fcn.py",
+      "source_file": "tiger_model/van/impl_fcn.py",
+      "source_sha256": "4a60407a79d0466be743ff292b3cf542502de1dfac081f0d8e9fd10f2944b601"
+    },
+    {
+      "packaged_file": "vendor/tiger/model/net/van/impl_uper.py",
+      "source_file": "tiger_model/van/impl_uper.py",
+      "source_sha256": "5e2e01ca44a29e3fe1cc557aed304c0586c59afde7db89ce34f87a2710500a94"
+    },
+    {
+      "packaged_file": "vendor/tiger/model/net/van/impl_van.py",
+      "source_file": "tiger_model/van/impl_van.py",
+      "source_sha256": "6f84db66bb0b191e2235c56879e6ec5a95edd97684254814c2da76c0fb196706"
+    },
+    {
+      "packaged_file": "vendor/tiger/model/net/van/mmcv_conv_module.py",
+      "source_file": "tiger_model/van/mmcv_conv_module.py",
+      "source_sha256": "0b32d4e96809dcd8b63078a4e6d95dc01d366d260a08ec69e6f8456c0b234a8b"
+    },
+    {
+      "packaged_file": "vendor/tiger/model/net/van/net.py",
+      "source_file": "tiger_model/van/net.py",
+      "source_sha256": "eec47fa5e82f1684d902104cb79a2feb66e856e0b0cee677149367aecd05adc0"
+    },
+    {
+      "packaged_file": "vendor/tiger/model/net/van/__init__.py",
+      "source_file": "tiger_model/van/__init__.py",
+      "source_sha256": "98175cfb74bd8507d24b7a46f3ed8f934cfd1fd9cf98c6a829c0ca8ba14a9946"
+    }
+  ]
+}

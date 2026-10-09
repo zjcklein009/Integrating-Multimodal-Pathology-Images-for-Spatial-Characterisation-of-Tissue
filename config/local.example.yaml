@@ -1,0 +1,6 @@
+he_dir: /path/to/he_slides
+mif_dir: /path/to/mif_slides
+clinical_labels: /path/to/clinical_labels.csv
+segmentation_checkpoint: /path/to/tissue_segmentation.pth
+kronos2_model: /path/to/KRONOS2
+virchow2_model: /path/to/Virchow2
