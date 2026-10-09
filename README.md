@@ -47,4 +47,4 @@ Start Jupyter inside the repository and run notebooks in their numbered order. U
 - The matched-modality comparison standardises and reduces each modality separately, combines equally weighted feature blocks, and fits each modality setting independently without tissue-fraction inputs or graph smoothing.
 - pCR tests use cases as independent observations. Raw and Benjamini–Hochberg-adjusted p-values remain available; displaying raw p-values does not replace multiple-testing correction.
 
-Automatic registration QC is not an independent accuracy measurement. Tissue masks and patch motifs are not validated cell phenotypes. Coarse and patient partitions that fail size criteria remain explicitly flagged. Local continuity is descriptive, and the report does not establish a validated pCR predictor.
+Automatic registration QC is not an independent accuracy measurement. Tissue masks and patch motifs are not validated cell phenotypes. Coarse and patient partitions that fail size criteria remain explicitly flagged.
